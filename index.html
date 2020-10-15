@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Result of the test">
+    <!-- ========== Page Title ========== -->
+    <title>Result of the test - Done by SudheerTG</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+	<link href="assets/css/grid.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section class="top-heding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>RESULT of the test</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="circles">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="white-circle">
+					<img src="assets/images/never.png" class="main_image">
+					<img src="assets/images/never-hover.png" class="hover__img">
+					<p>Never</p>
+				</div>
+			</div>
+			<div class="col">
+				<div class="white-circle">
+					<img src="assets/images/occasionally.png" class="main_image">
+					<img src="assets/images/occasionally-hover.png" class="hover__img">
+					<p>Occasionally </p>
+				</div>
+			</div>
+			<div class="col">
+				<div class="white-circle">
+					<img src="assets/images/4-hours.png" class="main_image">
+					<img src="assets/images/4-hours-hover.png" class="hover__img">
+					<p>4 hours</p>
+				</div>
+			</div>
+			<div class="col">
+				<div class="white-circle">
+					<img src="assets/images/yearly.png" class="main_image">
+					<img src="assets/images/yearly-hover.png" class="hover__img">
+					<p>yearly</p>
+				</div>
+			</div>
+			<div class="col">
+				<div class="white-circle">
+					<img src="assets/images/never.png" class="main_image">
+					<img src="assets/images/never-hover.png" class="hover__img">
+					<p>Never</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="slider">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12">
+			<div id="containment-wrapper">
+  <div id="draggable3" class="draggable ui-widget-content">
+    <p><img src="assets/images/Bar.png"></p>
+  </div>
+			</div>
+		</div>
+			<div class="col-md-12">
+			
+			<ul class="slider_wrap">
+				<li></li>
+				<li></li>
+				<li></li>
+				
+			</ul>
+				<ul class="text_wrap">
+					<li>
+					<span></span>
+					Less relevant
+					</li>
+					<li>
+					<span></span>
+					relevant
+					</li>
+					<li>
+					<span></span>
+					Very relevant
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-12 text-center">
+				<button id="the-box">TRY AGAIN <img src="assets/images/arrow.png"></button>
+			</div>
+		</div>
+	</div>
+</section>
+ <script src="assets/js/jquery-1.12.4.min.js"></script>
+
+ <script src="assets/js/jquery-ui.min.js"></script>
+ <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script>
+
+	  $( "#draggable3" ).draggable({ containment: "#containment-wrapper", axis: "x", scroll: false });
+
+
+  </script>
+<script>
+	$('#the-box').click(function () { 
+ $( "#draggable3" ).css( "left", "0" );
+									
+});</script>
+<script type="text/javascript">
+    jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+</script>
+
+</body>
+</html>
